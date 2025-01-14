@@ -1,6 +1,6 @@
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid"; // a plugin!
-import interactionPlugin, { DateClickArg } from "@fullcalendar/interaction";
+// import interactionPlugin, { DateClickArg } from "@fullcalendar/interaction";
 import jaLocale from "@fullcalendar/core/locales/ja";
 import "../Calender.css";
 import { Paper } from "@mui/material";

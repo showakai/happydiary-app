@@ -74,19 +74,19 @@ const All = () => {
   }, []);
 
   //月ごとのコンテンツを取得する処理
-  const getMonthlyDailyContents = (
-    allContents: DailyContents[],
-    currentMonth: number
-  ) => {
-    const monthlyContents = allContents.filter((content) => [
-      content.date.toDate().getMonth() + 1 === currentMonth,
-    ]);
-    const sortedContent = monthlyContents.sort(
-      (a, b) => b.date.toMillis() - a.date.toMillis()
-    );
+  //   const getMonthlyDailyContents = (
+  //     allContents: DailyContents[],
+  //     currentMonth: number
+  //   ) => {
+  //     const monthlyContents = allContents.filter((content) => [
+  //       content.date.toDate().getMonth() + 1 === currentMonth,
+  //     ]);
+  //     const sortedContent = monthlyContents.sort(
+  //       (a, b) => b.date.toMillis() - a.date.toMillis()
+  //     );
 
-    setMonthlyDailyContens(sortedContent);
-  };
+  //     setMonthlyDailyContens(sortedContent);
+  //   };
 
   const onUpdateContent = async (
     content: DailyContents,
