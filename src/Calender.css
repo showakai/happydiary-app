@@ -1,0 +1,107 @@
+.fc {
+  height: 100%;
+  overflow-y: hidden;
+}
+.fc .fc-toolbar-title {
+  font-size: 1.4rem;
+}
+.fc .fc-daygrid-event-harness {
+  width: 15px;
+  height: 15px;
+}
+.fc-col-header-cell-cushion {
+  color: #da8888;
+}
+.fc-daygrid-day-events {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 10px 5px 10px;
+  height: 40%;
+  gap: 5px;
+  overflow: hidden;
+}
+.fc .fc-daygrid-day-frame {
+  height: 90px;
+}
+.fc .fc-button-group button,
+.fc .fc-button-primary,
+.fc .fc-button-primary:hover,
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
+  background-color: #da8888;
+  border-color: #fff;
+  box-shadow: none;
+  outline: none;
+}
+.fc .fc-button-primary:disabled {
+  background-color: #ab8282;
+  border: none;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 15px;
+}
+.smileIcon {
+  width: auto;
+}
+
+@media screen and (max-width: 450px) {
+  .fc {
+    height: 100%;
+    overflow-y: hidden;
+  }
+  .fc .fc-toolbar-title {
+    font-size: 1rem;
+  }
+  .fc .fc-button-group button,
+  .fc .fc-button-primary {
+    height: 30px;
+    font-size: 13px;
+    padding: 3px;
+  }
+
+  .fc .fc-button-group button,
+  .fc .fc-button-primary,
+  .fc .fc-button-primary:hover,
+  .fc .fc-button-primary:not(:disabled).fc-button-active,
+  .fc .fc-button-primary:not(:disabled):active {
+    background-color: #da8888;
+    border-color: #fff;
+    box-shadow: none;
+    outline: none;
+    width: 48px;
+  }
+  .fc .fc-button-primary:disabled {
+    background-color: #ab8282;
+    width: 48px;
+    border: none;
+  }
+  .fc .fc-daygrid-day-top {
+    justify-content: center;
+    font-size: 12px;
+  }
+  .fc .fc-toolbar {
+    padding: 0 16px;
+  }
+  .fc-theme-standard td,
+  .fc-theme-standard th {
+    border: 0.5px solid #ddd;
+  }
+  .fc .fc-col-header-cell-cushion {
+    font-size: 12px;
+  }
+  .fc .fc-daygrid-day-frame {
+    height: 70px;
+  }
+  .fc-daygrid-day-events {
+    padding: 0;
+    gap: 0;
+  }
+}
