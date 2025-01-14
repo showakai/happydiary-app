@@ -107,7 +107,7 @@ function Calender({
     >
       <FullCalendar
         locale={jaLocale}
-        plugins={[dayGridPlugin, interactionPlugin]}
+        plugins={[dayGridPlugin]}
         initialView="dayGridMonth"
         fixedWeekCount={false}
         height="auto"
